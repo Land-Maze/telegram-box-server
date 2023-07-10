@@ -25,7 +25,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['*.controller.ts', '*.module.ts', '*.service.ts', '*.*.spec.ts'], // Adjust this pattern to match your Nest controller files
+      files: ['*.controller.ts', '*.module.ts', '*.service.ts', '*.*.spec.ts', '*.guard.ts'], // Adjust this pattern to match your Nest controller files
       rules: {
         '@typescript-eslint/no-unused-vars': 'off',
       },
