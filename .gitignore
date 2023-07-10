@@ -2,6 +2,16 @@
 /dist
 /node_modules
 
+# env files
+.*.env
+
+# run scripts
+# start.dev.sh
+# start.prod.sh
+
+# db
+/postgres-data
+
 # Logs
 logs
 *.log

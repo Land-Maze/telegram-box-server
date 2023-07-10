@@ -21,5 +21,14 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-unused-vars': ['warn', { 'argsIgnorePattern': '^_' }],
   },
+  overrides: [
+    {
+      files: ['*.controller.ts', '*.module.ts', '*.service.ts', '*.*.spec.ts'], // Adjust this pattern to match your Nest controller files
+      rules: {
+        '@typescript-eslint/no-unused-vars': 'off',
+      },
+    },
+  ],
 };
