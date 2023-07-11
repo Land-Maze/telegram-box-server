@@ -26,3 +26,11 @@ RUN corepack prepare pnpm@latest --activate
 RUN pnpm install 
 
 CMD ["pnpm", "run", "start:dev"]
+
+FROM development AS test
+
+CMD ["pnpm", "run", "test:watch"]
+
+FROM development AS test-e2e
+
+CMD ["pnpm", "run", "test:e2e:watch"]
